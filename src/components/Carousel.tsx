@@ -65,32 +65,33 @@ const Carousel = () => {
               </Button>
             </div>
 
-            {/* Slide indicators */}
-            <div className="flex space-x-2">
-              {slides.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentSlide(index)}
-                  className="w-3 h-3 rounded-full transition-all duration-200"
-                  style={{
-                    backgroundColor: index === currentSlide ? '#eed020' : 'rgba(255, 255, 255, 0.3)'
-                  }}
-                />
-              ))}
-            </div>
-
             
             {/* Navigation arrows */}
-            <div className="relative max-w-7xl mx-auto flex justify-between inset-0 items-center pt-5"> 
+            <div className="relative max-w-7xl mx-auto flex justify-between items-center inset-0 pt-5"> 
               <button
                 onClick={prevSlide}
-                className="transform -translate-y-1/2 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-200"
+                className="transform bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-200"
               >
                 <ChevronLeft className="w-6 h-6 text-white" />
               </button>
+
+              {/* Slide indicators */}
+              <div className="flex space-x-2">
+                {slides.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentSlide(index)}
+                    className="w-3 h-3 rounded-full transition-all duration-200"
+                    style={{
+                      backgroundColor: index === currentSlide ? '#eed020' : 'rgba(255, 255, 255, 0.3)'
+                    }}
+                  />
+                ))}
+              </div>
+
               <button
                 onClick={nextSlide}
-                className="transform -translate-y-1/2 bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-200"
+                className="transform bg-white/20 hover:bg-white/30 rounded-full p-2 transition-all duration-200"
               >
                 <ChevronRight className="w-6 h-6 text-white" />
               </button>

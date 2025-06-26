@@ -18,7 +18,7 @@ const FeaturesSection = () => {
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[#00aced]">
             🧰 Ce que vous offre l'outil Business Plan
           </h2>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto text-[#9B9B9B]">
+          <p className="text-lg leading-relaxed max-w-3xl mx-auto text-slate-500">
             Découvrez une interface conviviale, pensée pour tous les porteurs de projets, avec des visuels pédagogiques et des aides à chaque étape. Vous restez concentré sur l'essentiel : faire avancer votre idée.
           </p>
         </div>
@@ -33,7 +33,7 @@ const FeaturesSection = () => {
                 <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 bg-[#eed020]">
                   <span className="font-bold text-sm" style={{ color: '#0f4260' }}>✓</span>
                 </div>
-                <p className="leading-relaxed text-[#9B9B9B] text-sm md:text-base">{feature}</p>
+                <p className="leading-relaxed text-slate-500 text-sm md:text-base">{feature}</p>
               </div>
             </div>
           ))}

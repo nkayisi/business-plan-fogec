@@ -20,7 +20,7 @@ export default function Footer() {
                             <li>
                                 <a
                                     href="#connexion"
-                                    className="transition-colors duration-200 text-[#9B9B9B] hover:text-[#eed020]"
+                                    className="transition-colors duration-200 text-gray-300 underline hover:text-[#eed020]"
                                 >
                                     Se connecter
                                 </a>

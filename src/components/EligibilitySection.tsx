@@ -4,8 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Target, Users, TrendingUp } from 'lucide-react';
 
 const EligibilitySection = () => {
-  return (
-    <section className="py-16 lg:py-24" style={{ backgroundColor: '#F5F5F5' }}>
+  return ( //bg-[#F5F5F5]"
+    <section className="relative py-16 lg:py-24">
+      <div className="absolute inset-0 bg-[url(/Logo-Fogec.png)] bg-contain bg-center bg-no-repeat opacity-10"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-[#00aced]">
@@ -21,25 +22,25 @@ const EligibilitySection = () => {
                 <Target className="w-6 h-6 mr-3 text-[#eed020] hidden md:block" />
                 🎯 Critères d'éligibilité
               </h3>
-              <p className="mb-4 leading-relaxed text-[#9B9B9B]">
+              <p className="mb-4 leading-relaxed text-slate-500">
                 Pour que votre projet soit éligible au financement via le FOGEC, il doit répondre aux conditions suivantes :
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0 text-[#eed020]"></div>
-                  <p className="leading-relaxed" style={{ color: '#9B9B9B' }}>
+                  <p className="leading-relaxed text-slate-500">
                     Être porté par un citoyen congolais
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0 text-[#eed020]"></div>
-                  <p className="leading-relaxed" style={{ color: '#9B9B9B' }}>
+                  <p className="leading-relaxed text-slate-500">
                     Créer de la valeur ajoutée au niveau national (les activités de simple négoce de produits importés sont exclues)
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 rounded-full mt-2 flex-shrink-0 text-[#eed020]"></div>
-                  <p className="leading-relaxed" style={{ color: '#9B9B9B' }}>
+                  <p className="leading-relaxed text-slate-500">
                     Démontrer une rentabilité suffisante (vous devez justifier de votre capacité à rembourser un crédit)
                   </p>
                 </div>
@@ -51,13 +52,13 @@ const EligibilitySection = () => {
                 <TrendingUp className="w-5 h-5 mr-3 text-[#eed020] hidden md:block" />
                 👉 Priorité sectorielle
               </h4>
-              <p className="mb-2 leading-relaxed text-[#9B9B9B]">
+              <p className="mb-2 leading-relaxed text-slate-500">
                 Tous les secteurs légaux sont éligibles, mais priorité aux projets dans :
               </p>
               <ul className="space-y-2 ml-4">
-                <li className="leading-relaxed" style={{ color: '#9B9B9B' }}>• Agro-industrie</li>
-                <li className="leading-relaxed" style={{ color: '#9B9B9B' }}>• Industrie locale (production/transformation)</li>
-                <li className="leading-relaxed" style={{ color: '#9B9B9B' }}>• Économie verte et durable</li>
+                <li className="leading-relaxed text-slate-500">• Agro-industrie</li>
+                <li className="leading-relaxed text-slate-500">• Industrie locale (production/transformation)</li>
+                <li className="leading-relaxed text-slate-500">• Économie verte et durable</li>
               </ul>
             </div>
 
@@ -67,10 +68,10 @@ const EligibilitySection = () => {
                 📤 Soumettre votre projet
               </h4>
               <div className="space-y-3">
-                <p className="leading-relaxed text-[#9B9B9B]">
+                <p className="leading-relaxed text-slate-500">
                   Vous êtes porteur d'un projet et souhaitez accéder à un financement FOGEC ? Grâce à la plateforme Business Plan, vous pouvez désormais rédiger, structurer et soumettre votre dossier directement en ligne, sans vous déplacer.
                 </p>
-                <p className="leading-relaxed text-[#9B9B9B]">
+                <p className="leading-relaxed text-slate-500">
                   L'outil vous guide étape par étape, avec une interface intuitive, conforme aux critères FOGEC. Une fois prêt, transmettez votre dossier en un clic à l'équipe FOGEC.
                 </p>
               </div>
@@ -88,7 +89,7 @@ const EligibilitySection = () => {
 
           {/* Right column - Illustration */}
           <div className="lg:sticky lg:top-8">
-            <div className="rounded-2xl md:p-8 p-4 shadow-lg border border-gray-200" style={{ backgroundColor: '#FFFFFF' }}>
+            <div className="rounded-2xl md:p-8 p-4 shadow-lg border border-gray-200 bg-[#FFFFFF]   ">
               <div className="md:space-y-6 space-y-4">
                 <div className="text-center">
                   <h5 className="text-lg font-semibold mb-4 text-[#0f4260]">
@@ -99,19 +100,19 @@ const EligibilitySection = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-4 md:p-4 p-2.5 rounded-lg bg-[#F5F5F5]">
                     <div className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-[#0f4260] bg-[#eed020]">1</div>
-                    <span className='text-[#9B9B9B]'>Création du business plan</span>
+                    <span className='text-slate-500'>Création du business plan</span>
                   </div>
                   <div className="flex items-center space-x-4 md:p-4 p-2.5 rounded-lg bg-[#F5F5F5]">
                     <div className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-[#0f4260] bg-[#eed020]">2</div>
-                    <span className='text-[#9B9B9B]'>Validation et structuration</span>
+                    <span className='text-slate-500'>Validation et structuration</span>
                   </div>
                   <div className="flex items-center space-x-4 md:p-4 p-2.5 rounded-lg bg-[#F5F5F5]">
                     <div className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-[#0f4260] bg-[#eed020]">3</div>
-                    <span className='text-[#9B9B9B]'>Soumission au FOGEC</span>
+                    <span className='text-slate-500'>Soumission au FOGEC</span>
                   </div>
                   <div className="flex items-center space-x-4 md:p-4 p-2.5 rounded-lg bg-[#F5F5F5]">
                     <div className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-[#0f4260] bg-[#eed020]">4</div>
-                    <span className='text-[#9B9B9B]'>Suivi du financement</span>
+                    <span className='text-slate-500'>Suivi du financement</span>
                   </div>
                 </div>
               </div>
